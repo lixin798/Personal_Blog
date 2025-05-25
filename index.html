@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -322,8 +323,13 @@
         }
 
         @keyframes progress {
-            from { width: 0; }
-            to { width: 100%; }
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
         }
 
         .tags {
@@ -895,6 +901,183 @@
             .chart-container {
                 grid-template-columns: 1fr;
             }
+
+            /* 减小字体大小 */
+            .profile-info h1 {
+                font-size: 32px;
+            }
+
+            .profile-title span {
+                font-size: 18px;
+            }
+
+            .profile-desc {
+                font-size: 16px;
+            }
+
+            .contact-item {
+                font-size: 14px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .about-text p {
+                font-size: 16px;
+            }
+
+            .skill-card h3 {
+                font-size: 20px;
+            }
+
+            .skill-list li {
+                font-size: 14px;
+            }
+
+            .project-info h3 {
+                font-size: 20px;
+            }
+
+            .project-desc {
+                font-size: 14px;
+            }
+
+            .timeline-content h3 {
+                font-size: 18px;
+            }
+
+            .award-card h3 {
+                font-size: 20px;
+            }
+
+            .award-desc {
+                font-size: 14px;
+            }
+
+            .chart-title {
+                font-size: 16px;
+            }
+
+            .footer-title {
+                font-size: 28px;
+            }
+
+            .footer-desc {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* 进一步减小字体大小和间距 */
+            .container {
+                padding: 0 10px;
+            }
+
+            .profile {
+                padding: 20px;
+            }
+
+            .about-section,
+            .skills-section,
+            .projects-section,
+            .education-section,
+            .awards-section,
+            .data-section {
+                padding: 20px;
+            }
+
+            .profile-info h1 {
+                font-size: 28px;
+            }
+
+            .profile-title span {
+                font-size: 16px;
+            }
+
+            .profile-desc {
+                font-size: 14px;
+            }
+
+            .contact-item {
+                font-size: 12px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .about-text p {
+                font-size: 14px;
+            }
+
+            .skill-card {
+                padding: 20px;
+            }
+
+            .skill-card h3 {
+                font-size: 18px;
+            }
+
+            .skill-list li {
+                font-size: 12px;
+            }
+
+            .project-card {
+                min-width: auto;
+            }
+
+            .project-info {
+                padding: 15px;
+            }
+
+            .project-info h3 {
+                font-size: 18px;
+            }
+
+            .project-desc {
+                font-size: 12px;
+            }
+
+            .timeline-item {
+                padding-left: 50px;
+            }
+
+            .timeline-content {
+                padding: 15px;
+            }
+
+            .timeline-content h3 {
+                font-size: 16px;
+            }
+
+            .award-card {
+                padding: 20px;
+            }
+
+            .award-card h3 {
+                font-size: 18px;
+            }
+
+            .award-desc {
+                font-size: 12px;
+            }
+
+            .chart-card {
+                padding: 15px;
+            }
+
+            .chart-title {
+                font-size: 14px;
+            }
+
+            .footer-title {
+                font-size: 24px;
+            }
+
+            .footer-desc {
+                font-size: 12px;
+            }
         }
 
         /* 动画效果 */
@@ -903,6 +1086,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -921,6 +1105,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
 </head>
+
 <body>
     <!-- 导航栏 -->
     <header>
@@ -1198,38 +1383,9 @@
                             2024.03 - 2024.05
                         </div>
                         <p>
-                            探索优惠形式对用户消费决策的作用，分析商户投放特征，挖掘消费券与距离关系，
-                            构建业务特征与建模，实现用户行为预测。
+                            利用大数据技术对出行数据进行挖掘与分析，为业务决策提供支持。
                         </p>
                     </div>
-                </div>
-                <div class="timeline-item right stagger-item">
-                    <div class="timeline-content">
-                        <h3><i class="fas fa-briefcase"></i> 广东岭南职业技术学院 - 实习</h3>
-                        <div class="timeline-date">
-                            <i class="fas fa-calendar-alt"></i>
-                            2025.03 - 至今
-                        </div>
-                        <p>
-                            在大数据部门实习期间，作为项目负责人，深度参与数据挖掘与分析工作，
-                            涵盖数据处理全流程，在技术应用与项目协作方面积累了丰富经验。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 数据可视化 -->
-        <section class="data-section" id="data">
-            <h2 class="section-title">技能可视化</h2>
-            <div class="chart-container">
-                <div class="chart-card">
-                    <div class="chart-title">技术掌握程度</div>
-                    <canvas id="skillsChart"></canvas>
-                </div>
-                <div class="chart-card">
-                    <div class="chart-title">项目技术分布</div>
-                    <canvas id="projectsChart"></canvas>
                 </div>
             </div>
         </section>
@@ -1268,24 +1424,37 @@
                 </div>
             </div>
         </section>
+
+        <!-- 数据可视化 -->
+        <section class="data-section" id="data">
+            <h2 class="section-title">数据可视化</h2>
+            <div class="chart-container">
+                <div class="chart-card">
+                    <h3 class="chart-title">技能掌握程度</h3>
+                    <canvas id="skillsChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">项目分布</h3>
+                    <canvas id="projectsChart"></canvas>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- 页脚 -->
-    <footer id="contact">
+    <footer>
         <div class="footer-content">
             <h2 class="footer-title">联系我</h2>
             <p class="footer-desc">
-                期待与您合作，共同探索技术的无限可能！
-                欢迎通过以下方式联系我，我会尽快回复。
+                如果您有任何问题或合作意向，请随时联系我。
             </p>
             <div class="social-links">
-                <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
-                <a href="#" title="微博"><i class="fab fa-weibo"></i></a>
-                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-weixin"></i></a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 李鑫的个人博客. 保留所有权利.</p>
+                &copy; 2024 李鑫. All rights reserved.
             </div>
         </div>
     </footer>
@@ -1296,156 +1465,109 @@
     </div>
 
     <script>
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // 返回顶部按钮
-        const backToTopButton = document.querySelector('.back-to-top');
-        
-        window.addEventListener('scroll', () => {
+        // 显示/隐藏返回顶部按钮
+        window.addEventListener('scroll', function () {
+            const backToTop = document.querySelector('.back-to-top');
             if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('show');
+                backToTop.classList.add('show');
             } else {
-                backToTopButton.classList.remove('show');
+                backToTop.classList.remove('show');
             }
         });
-        
-        backToTopButton.addEventListener('click', () => {
+
+        // 点击返回顶部按钮
+        const backToTop = document.querySelector('.back-to-top');
+        backToTop.addEventListener('click', function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
         });
-        
+
         // 动画效果
-        const fadeElements = document.querySelectorAll('.fade-in');
         const staggerItems = document.querySelectorAll('.stagger-item');
-        
-        function checkFade() {
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-            
-            staggerItems.forEach((item, index) => {
-                const itemTop = item.getBoundingClientRect().top;
-                
-                if (itemTop < window.innerHeight - 150) {
-                    setTimeout(() => {
-                        item.style.animation = 'fadeIn 0.8s ease forwards';
-                    }, index * 100); // 每个元素延迟100ms
-                }
-            });
-        }
-        
-        // 初始检查
-        checkFade();
-        
-        // 滚动时检查
-        window.addEventListener('scroll', checkFade);
-        
-        // 导航栏高亮
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
+        staggerItems.forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.2}s`;
+            item.classList.add('fade-in');
         });
-        
-        // 技能图表
-        window.addEventListener('load', function() {
-            // 技能掌握程度图表
-            const skillsCtx = document.getElementById('skillsChart').getContext('2d');
-            const skillsChart = new Chart(skillsCtx, {
-                type: 'radar',
-                data: {
-                    labels: ['Python', 'Java', '大数据', '数据库', '机器学习', 'Web开发'],
-                    datasets: [{
-                        label: '技能掌握程度',
-                        data: [90, 80, 85, 80, 75, 82],
-                        backgroundColor: 'rgba(67, 97, 238, 0.2)',
-                        borderColor: 'rgba(67, 97, 238, 1)',
-                        borderWidth: 2,
-                        pointBackgroundColor: 'rgba(67, 97, 238, 1)',
-                        pointRadius: 4
-                    }]
-                },
-                options: {
-                    scales: {
-                        r: {
-                            beginAtZero: true,
-                            max: 100,
-                            ticks: {
-                                stepSize: 20
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            display: false
-                        }
+
+        // 数据可视化
+        const skillsData = {
+            labels: ['Python开发', '大数据技术', '数据库设计', '数据可视化', '机器学习'],
+            datasets: [{
+                label: '技能掌握程度',
+                data: [90, 85, 80, 88, 75],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 205, 86, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 205, 86, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        const skillsConfig = {
+            type: 'bar',
+            data: skillsData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
                     }
                 }
-            });
-            
-            // 项目技术分布图表
-            const projectsCtx = document.getElementById('projectsChart').getContext('2d');
-            const projectsChart = new Chart(projectsCtx, {
-                type: 'pie',
-                data: {
-                    labels: ['Python', '大数据', '数据可视化', 'Web开发', '机器学习'],
-                    datasets: [{
-                        data: [45, 25, 15, 10, 5],
-                        backgroundColor: [
-                            'rgba(67, 97, 238, 0.8)',
-                            'rgba(72, 149, 239, 0.8)',
-                            'rgba(247, 37, 133, 0.8)',
-                            'rgba(63, 55, 201, 0.8)',
-                            'rgba(29, 53, 87, 0.8)'
-                        ],
-                        borderColor: 'white',
-                        borderWidth: 2
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'right'
-                        }
+            }
+        };
+
+        const skillsChart = new Chart(
+            document.getElementById('skillsChart'),
+            skillsConfig
+        );
+
+        const projectsData = {
+            labels: ['旅游网站数据爬取与分析系统', '智能股票分析系统', '全国气象可视化分析系统'],
+            datasets: [{
+                label: '项目分布',
+                data: [1, 1, 1],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        const projectsConfig = {
+            type: 'bar',
+            data: projectsData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
                     }
                 }
-            });
-        });
+            }
+        };
+
+        const projectsChart = new Chart(
+            document.getElementById('projectsChart'),
+            projectsConfig
+        );
     </script>
 </body>
-</html>    
+
+</html>
