@@ -1007,7 +1007,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>大数据技术</span>
+                            <span>web开发</span>
                             <span>85%</span>
                         </div>
                         <div class="skill-bar">
@@ -1016,7 +1016,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>数据库设计</span>
+                            <span>大数据技术</span>
                             <span>80%</span>
                         </div>
                         <div class="skill-bar">
@@ -1025,8 +1025,8 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span>数据可视化</span>
-                            <span>88%</span>
+                            <span>数据库设计</span>
+                            <span>80%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress-bar" data-percent="88%"></div>
@@ -1047,9 +1047,10 @@
                 <span class="tag"><i class="fab fa-python"></i> Python</span>
                 <span class="tag"><i class="fab fa-java"></i> Java</span>
                 <span class="tag"><i class="fas fa-database"></i> 大数据</span>
-                <span class="tag"><i class="fas fa-chart-line"></i> 数据分析</span>
+                <span class="tag"><i class="fas fa-chart-line"></i> 数据分析与可视化</span>
                 <span class="tag"><i class="fas fa-robot"></i> 机器学习</span>
                 <span class="tag"><i class="fas fa-crawler"></i> 爬虫开发</span>
+				<span class="tag"><i class="fas fa-crawler"></i> web开发</span>
             </div>
         </section>
 
@@ -1064,6 +1065,8 @@
                         <li>熟悉Hadoop生态系统</li>
                         <li>掌握Django、Flask框架</li>
                         <li>微信小程序开发能力</li>
+						<li>熟练使用Scrapy、BeautifulSoup进行数据爬取</li>
+						<li>掌握Spark SQL、Pandas进行数据清洗</li>
                     </ul>
                 </div>
                 <div class="skill-card stagger-item">
@@ -1073,6 +1076,8 @@
                         <li>Spark数据处理与分析</li>
                         <li>Kafka消息队列使用</li>
                         <li>分布式计算优化</li>
+						<li>参与Hadoop/Spark集群调优，解决数据倾斜问题</li>
+						<li>利用Airflow调度ETL任务</li>
                     </ul>
                 </div>
                 <div class="skill-card stagger-item">
@@ -1082,6 +1087,7 @@
                         <li>复杂SQL查询与存储过程</li>
                         <li>MongoDB等NoSQL数据库操作</li>
                         <li>数据仓库建设</li>
+						<li>Redis</li>
                     </ul>
                 </div>
                 <div class="skill-card stagger-item">
@@ -1091,6 +1097,7 @@
                         <li>Matplotlib、Seaborn</li>
                         <li>动态数据看板制作</li>
                         <li>自助式BI平台搭建</li>
+						<li>使用Tableau/Pyecharts搭建动态业务看板</li>
                     </ul>
                 </div>
             </div>
@@ -1098,12 +1105,77 @@
 
         <!-- 项目经历 -->
         <section class="projects-section" id="projects">
-            <h2 class="section-title">项目经历</h2>
+            <h2 class="section-title">项目经历</h2>	
             <div class="projects-container">
+				<div class="project-card stagger-item">
+				    <img src="https://picsum.photos/id/180/350/200" alt=" RailBot 抢票大师" class="project-image">
+				    <div class="project-info">
+				        <h3><i class="fas fa-globe"></i> RailBot 抢票大师</h3>
+				        <div class="project-date">
+				            <i class="fas fa-calendar-alt"></i>
+				            2025.04 - 2025.05
+				        </div>
+				        <p class="project-desc">
+				             开发了一款用于12306火车票查询和自动抢票的系统，旨在提高购票效率和成功率。
+				        </p>
+				        <div class="project-tags">
+				            <span class="project-tag">Python</span>
+				            <span class="project-tag">flask</span>
+							<span class="project-tag">Spark</span>
+							<span class="project-tag">selenium</span>
+							<span class="project-tag">mysql</span>
+							<span class="project-tag">多线程</span>
+				            <span class="project-tag">异步IO</span>
+				        </div>
+				    </div>
+				</div>
+				<div class="project-card stagger-item">
+				    <img src="https://picsum.photos/id/180/350/200" alt="股情雷达" class="project-image">
+				    <div class="project-info">
+				        <h3><i class="fas fa-globe"></i>股情雷达</h3>
+				        <div class="project-date">
+				            <i class="fas fa-calendar-alt"></i>
+				            2025.02 - 2025.03
+				        </div>
+				        <p class="project-desc">
+				            实时监控股票市场行情，提供股票价格、走势、交易量等信息。
+				        </p>
+				        <div class="project-tags">
+				            <span class="project-tag">Python</span>
+				            <span class="project-tag">Django</span>
+							<span class="project-tag">Spark</span>
+							<span class="project-tag">selenium</span>
+							<span class="project-tag">Redis</span>
+				            <span class="project-tag">数据分析与可视化</span>
+				        </div>
+				    </div>
+				</div>
+				<div class="project-card stagger-item">
+				    <img src="https://picsum.photos/id/180/350/200" alt="电子商城" class="project-image">
+				    <div class="project-info">
+				        <h3><i class="fas fa-globe"></i>电子商城</h3>
+				        <div class="project-date">
+				            <i class="fas fa-calendar-alt"></i>
+				            2024.02 - 2024.03
+				        </div>
+				        <p class="project-desc">
+				             基于Django框架开发的在线商城系统，具备商品展示、用户管理、订单处理、支付集成等完整功能。
+				        </p>
+				        <div class="project-tags">
+				            <span class="project-tag">Python</span>
+				            <span class="project-tag">Django</span>
+							<span class="project-tag">Spark</span>
+							<span class="project-tag">selenium</span>
+							<span class="project-tag">Redis</span>
+				            <span class="project-tag">爬虫</span>
+				            <span class="project-tag">数据分析</span>
+				        </div>
+				    </div>
+				</div>
                 <div class="project-card stagger-item">
                     <img src="https://picsum.photos/id/180/350/200" alt="旅游网站数据爬取与分析系统" class="project-image">
                     <div class="project-info">
-                        <h3><i class="fas fa-globe"></i> 国内外旅游网站数据爬取与分析系统</h3>
+                        <h3><i class="fas fa-globe"></i>TravelCrawler Pro</h3>
                         <div class="project-date">
                             <i class="fas fa-calendar-alt"></i>
                             2024.11 - 2025.12
@@ -1114,6 +1186,7 @@
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Django</span>
+							<span class="project-tag">Spark</span>
 							<span class="project-tag">selenium</span>
 							<span class="project-tag">MYSQl</span>
                             <span class="project-tag">爬虫</span>
@@ -1124,7 +1197,7 @@
                 <div class="project-card stagger-item">
                     <img src="https://picsum.photos/id/160/350/200" alt="智能股票分析系统" class="project-image">
                     <div class="project-info">
-                        <h3><i class="fas fa-chart-line"></i> 智能股票分析系统</h3>
+                        <h3><i class="fas fa-chart-line"></i>智股天玑系统</h3>
                         <div class="project-date">
                             <i class="fas fa-calendar-alt"></i>
                             2025.01 - 2025.02
@@ -1136,6 +1209,7 @@
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Flask</span>
 							<span class="project-tag">selenium</span>
+							<span class="project-tag">Spark</span>
 							<span class="project-tag">MYSQl</span>
                             <span class="project-tag">数据分析</span>
                             <span class="project-tag">API</span>
@@ -1278,6 +1352,36 @@
         <section class="awards-section" id="awards">
             <h2 class="section-title">荣誉奖项</h2>
             <div class="awards-container">
+				<div class="award-card stagger-item">
+				    <h3><i class="fas fa-trophy"></i>全国AI视觉应用创新挑战赛广东省分赛</h3>
+				    <div class="award-date">2025年</div>
+				    <p class="award-desc">
+				        全国AI视觉应用创新挑战赛广东省分赛省一
+				    </p>
+				</div>
+				<div class="award-card stagger-item">
+					<h3><i class="fas fa-award"></i>第七届传智杯全国IT技能大赛</h3>
+						<div class="award-date">2024年</div>
+							<p class="award-desc">
+								第七届传智杯全国IT技能大赛中荣获web网页开发挑战赛C组初赛:一等奖
+							</p>
+				</div>
+				<div class="award-card stagger-item">
+				    <h3><i class="fas fa-award"></i> 2025年(第二十届)海峡两岸暨港澳地区
+大学生计算机创新作品赛广东省赛省三</h3>
+				    <div class="award-date">2025年</div>
+				    <p class="award-desc">
+				        2025年(第二十届)海峡两岸暨港澳地区
+				        大学生计算机创新作品赛广东省赛
+				    </p>
+				</div>
+				<div class="award-card stagger-item">
+				    <h3><i class="fas fa-award"></i> 软件著作权</h3>
+				    <div class="award-date">2025年</div>
+				    <p class="award-desc">
+				        申请成功中华人民共和国版权局计算机软件著作权登记证书
+				    </p>
+				</div>
                 <div class="award-card stagger-item">
                     <h3><i class="fas fa-trophy"></i> 蓝桥杯Python组省级二等奖</h3>
                     <div class="award-date">2025年</div>
@@ -1300,14 +1404,14 @@
                     </p>
                 </div>
                 <div class="award-card stagger-item">
-                    <h3><i class="fas fa-certificate"></i> 大学生数学建模省二等奖</h3>
+                    <h3><i class="fas fa-certificate"></i> 全国大学生数学建模省二等奖</h3>
                     <div class="award-date">2024年</div>
                     <p class="award-desc">
                         针对E题建立数学模型，数据拟合度达91%。
                     </p>
                 </div>
 				<div class="award-card stagger-item">
-				    <h3><i class="fas fa-certificate"></i> 大学生创新创业大赛省一</h3>
+				    <h3><i class="fas fa-certificate"></i> 大学生创新创业大赛省二</h3>
 				    <div class="award-date">2025年</div>
 				    <p class="award-desc">
 				        AI视觉项目
@@ -1438,7 +1542,7 @@
                     labels: ['Python', 'Java', '大数据', '数据库', '机器学习', 'Web开发'],
                     datasets: [{
                         label: '技能掌握程度',
-                        data: [90, 80, 85, 80, 75, 82],
+                        data: [90, 79, 90, 88, 75, 99],
                         backgroundColor: 'rgba(67, 97, 238, 0.2)',
                         borderColor: 'rgba(67, 97, 238, 1)',
                         borderWidth: 2,
@@ -1469,7 +1573,7 @@
             const projectsChart = new Chart(projectsCtx, {
                 type: 'pie',
                 data: {
-                    labels: ['Python', '大数据', '数据可视化', 'Web开发', '机器学习'],
+                    labels: ['Python', 'Web开发', '大数据', '数据可视化', '机器学习'],
                     datasets: [{
                         data: [45, 25, 15, 10, 5],
                         backgroundColor: [
